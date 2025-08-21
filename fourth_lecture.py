@@ -186,3 +186,60 @@ print(student)
 
 student.update({"city" : "karachi" , "name" : "khan"})
 print(student)
+
+
+# Set in python
+# unordered item , unique and immutable . we cannot store list and dictionary in set.
+
+collection = {1, 2, 3, 4}
+
+print(collection)
+print(type(collection))
+
+# we can also add string in set, we can also find length ,set ignore duplicate values , for example
+
+set = { 1, 2, 2, 2, "mehak", "mehak"}
+print(set)
+print(type(set))
+print(len(set))
+
+# for empty set
+
+collection = set()
+print(type(collection))
+
+# SET METHOD
+# SET ARE MUTABLE BUT AN ELEMENTS OF SET ARE IMMUTABLE.
+
+# 1: set.add()  (adds an element)
+collection =  set()
+collection.add(2)
+collection.add(6)
+collection.add(4)
+collection.add((1,2,3)) # we can also add tuples
+collection.add(6) #set ignore duplicate values
+print(collection)         
+
+# 2: set.remove()  (removes an element)
+
+collection = {1, 6, 7, 9, 2}
+
+collection.remove(6)
+print(collection) 
+
+# 3: set.clear()  (empties the set)
+
+collection =  set()
+collection.add(2)
+collection.add(6)
+collection.add(4)
+collection.add((1,2,3)) 
+collection.add(6)
+collection.clear()
+print(len(collection))
+
+# 4: set.pop()   (removes a random value)
+collection = {"hello", "apna college", "world", "coding", "python"}
+print(collection.pop())
+print(collection.pop())
+print(collection.pop())
