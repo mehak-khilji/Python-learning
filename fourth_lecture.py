@@ -243,3 +243,61 @@ collection = {"hello", "apna college", "world", "coding", "python"}
 print(collection.pop())
 print(collection.pop())
 print(collection.pop())
+
+# 5: set.union()  (combine both set values and return new)
+set1 = {1, 2, 3}
+set2 = {2, 3, 4,}
+print(set1.union(set2))
+
+# 6: set.intersection()  (combine coommon values and return true)
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+print(set1.intersection(set2))
+
+
+# PRACTICE QUESTIONS
+
+# 1: store following word meanings in a python dictionary
+# table : "a piece of furniture", "list of facts and figures"
+# cat : "a small animal"
+
+dict = {
+    "cat": " a small animal",
+    "table" : ["a piece of furniture", "list of fact and figures"]
+}
+
+print(dict)
+
+# 2: you are given a list of subject for students assume one classrooom is required for one subject how many classrooms are needed by all students
+# "python", "java", "C++", "python", "javascript", "java", "python", "java", "C++", "C"
+
+subjects = {"python", "javascript", "java", "C++", "C", "python", "java", "C++", "python", "java"}
+print(subjects)
+print(len(subjects))      
+
+# 3: program to enter marks of 3 subjects from user and store them in a dict. start with empty dict and add one by one use subject name as key and marks as values
+
+marks = {}
+
+x = int(input("enter marks: ")) 
+marks.update({"physics" : x })
+
+x = int(input("enter marks: ")) 
+marks.update({"math" : x })
+
+x = int(input("enter marks: ")) 
+marks.update({"computer" : x })
+print(marks)
+
+# 4: figure out a way to store 9 & 9.0 as separate value in set (you can take help from built in data type)
+values = {9, "9.0"}
+print(values)
+
+# another method to solve this question
+
+values = {
+    ("float", "9.0"),
+    ("int",  "9")
+
+}
+print(values)
