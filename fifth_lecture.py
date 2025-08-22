@@ -78,3 +78,48 @@ while i < len(n):
     if(n[i] == x):
        print("found at idx:", i)
     i += 1
+
+# BREAK AND CONTINUE KEYWORDS
+
+#BREAK KEYWORD EXAMPLES
+i = 1
+while i <= 5:
+    print(i)
+    if (i == 3):
+        break
+    i += 1
+
+print("end of code")   
+
+# another example
+
+n = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100) 
+x = 81
+i = 0
+
+while i < len(n):
+    if(n[i] == x):
+       print("found at idx:", i)
+       break
+    i += 1
+print("end of code")
+
+# CONTINUE KEYWORD EXAMPLES
+
+i = 0
+while i <= 5:
+    if(i == 3):
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+#another example 
+
+i = 1
+while i <= 20:
+    if(i%2 == 0):
+        i += 1
+        continue
+    print(i)
+    i += 1
