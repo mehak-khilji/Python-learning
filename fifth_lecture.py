@@ -42,3 +42,39 @@ i = 100
 while i >= 1:
     print (i)
     i -= 1
+
+# 3: print a multiplication table of a number n
+
+n = int(input("enter number: "))
+i = 1
+while i <= 10:
+    print(n * i) 
+    i += 1
+
+# 4: print elements of following list usimg a loop [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] 
+
+n =[1, 4, 9, 16, 25, 36, 49, 64, 81, 100] 
+i = 0
+
+while i < len(n):
+    print(n[i])
+    i += 1
+
+# another example of ques 4
+heroes = ["spiderman", "batman", "ironman"] 
+i = 0
+while i < len(heroes):
+    print(heroes[i])
+    i += 1   
+
+# 5: search for a number x in the tuple using loop
+#(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+n = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100) 
+x = 4
+i = 0
+
+while i < len(n):
+    if(n[i] == x):
+       print("found at idx:", i)
+    i += 1
