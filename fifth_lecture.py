@@ -9,8 +9,8 @@ while count <= 5 :
 # to print for 100 times
 i = 1
 while i <= 100 :
-        print("khilji", i)
-        i += 1
+    print("khilji", i)
+    i += 1
 
 # print number 1 to 5
 i = 1
