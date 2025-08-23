@@ -76,7 +76,7 @@ student = {
             }
 }
 print(student)
-print(student["subject"]) # is want to print the one key
+print(student["subject"]) # if we want to print the one key
 print(student["subject"]["chem"]) # if we want to print only one key 
 
 # DICTIONARY METHODS
