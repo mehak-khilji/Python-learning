@@ -46,7 +46,7 @@ dict = {
 
 dict["name"] = "sana"
 print(dict["name"])
-print(dict["topics"])
+print(dict["topics"]) 
 
 # we can also add new key value very esaily
 
