@@ -7,7 +7,7 @@ info = {
     "learning" : "coding",  
     "age" : 21,
     "is_adult" : True,
-    "marks" : 94.7
+    "marks" : 94.7 
 } 
 print(info)
 
