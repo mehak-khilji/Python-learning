@@ -71,8 +71,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 print(student)
@@ -86,8 +86,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 print(student.keys())
@@ -107,8 +107,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 
@@ -125,8 +125,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 
@@ -149,8 +149,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 
@@ -168,8 +168,8 @@ student = {
     "name" : "rahul",
     "subject" : {
         "phy" : 90.6,
-          "chem" : 80.9,
-            "comp" : 99.2
+        "chem" : 80.9,
+        "comp" : 99.2
             }
 }
 
