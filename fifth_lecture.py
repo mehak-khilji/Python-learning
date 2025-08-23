@@ -288,4 +288,5 @@ i = 1
 while i<= n:
     fact *= i
     i += 1
-print("factorial of n =", fact)            
+print("factorial of n =", fact)   
+         
