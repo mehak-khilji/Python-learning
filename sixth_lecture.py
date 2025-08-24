@@ -1,1 +1,108 @@
 # FUNCTION AND RECURSION
+# functions in python 
+
+def calculate_sum(a, b):
+    sum = a + b
+    print(sum)
+    return sum
+
+calculate_sum(20, 10)
+calculate_sum(80, 20)
+calculate_sum(45, 45)
+
+# it can be written as 
+def calculate_sum(a, b):
+    return a + b
+
+sum = calculate_sum(1, 8)
+print(sum) 
+
+# program to print hello
+def print_hello():
+    print("hello")
+
+print_hello()  
+
+# average of 3 number
+
+def average(x, y, z):
+    sum = x + y + z
+    avg = sum/3
+    print(avg)
+    return average
+
+average(4, 8, 3)
+average(99, 80, 100)
+
+
+# built-in function
+# 1: print()
+print("student", end=" ") #sep = " "
+print("mehak khilji") #end = "\n"
+
+# DEFAULT PARAMETERS
+def multiplication(a, b=4): #default arguments should be in the end
+    print(a * b)
+    return a * b
+    
+multiplication(1)
+
+# it can be written as like this:
+def multiplication(a=2, b=4):
+    print(a * b)
+    return a * b
+    
+multiplication()
+
+# PRACTICE QUESTIONS
+# function to print length of list .(list is the parameter)
+
+numbers = [1, 2, 4, 5, 5, 7, 8, 9]
+countries = [ "Pakistan", "UK", "USA", "Framce", "turkey"]
+def print_length(list):
+    print(len(list))
+
+
+print_length(countries)
+print_length(numbers)
+
+# 2: function to print elements of list in single line. (list is the parameter)
+
+heroes = ["thor", "spiderman", "superman", "batman", "ironman"]
+
+def print_elements(list):
+    for item in list:
+        print(item, end=" ")
+
+print_elements(heroes)           
+
+# 3: function to find the factorial of n. (n is the parameter)
+n = int(input("enter number: "))
+
+def calculate_factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+
+calculate_factorial(n)
+
+
+# function to convert USD to PKR
+
+def converter(usd_value):
+    pkr_value = usd_value * 283
+    print(usd_value, "USD =", pkr_value, "PKR")
+
+converter(20)
+
+# function to input number to find even and odd number
+
+n = int(input("enter number: "))
+def find_function(n):
+    if n%2 == 0:
+        print("even number")
+    else:
+        print("odd number")
+
+find_function(n)        
