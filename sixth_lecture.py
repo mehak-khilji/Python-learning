@@ -127,7 +127,7 @@ def fact(n):
     
 print(fact(3))   
 
-# prcatice question
+# practice question
 # 1: recursive function to calculate sum of first n natural numbers
 
 n = int(input("enter number: "))
