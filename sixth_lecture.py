@@ -126,3 +126,27 @@ def fact(n):
     return fact(n-1)*n
     
 print(fact(3))   
+
+# prcatice question
+# 1: recursive function to calculate sum of first n natural numbers
+
+n = int(input("enter number: "))
+def calculate_sum(n):
+    if(n == 0):
+        return 0
+    return calculate_sum(n-1) + n
+
+sum =calculate_sum(n)
+print(sum)
+
+# 2: write a recursive function to print all elements in a list. (hint: use list and index as parameter)
+
+fruits = ["mango", "apple", "banana", "grapes", "orange"] 
+def print_list(list, index=0):
+    if(index == len(list)):
+        return
+    print(list[index])
+    print_list(list, index+1)
+
+print_list(fruits)
+
