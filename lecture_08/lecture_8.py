@@ -197,3 +197,103 @@ Account1.credit(9000)
 Account1.debit(2000)      
 Account1.credit(1000)
 
+ # DEL KEYWORD
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("mehak")
+print(s1.name)
+del s1.name
+print(s1.name)
+    
+# private attributes and methods
+class Account:
+    def __init__(self, account_no, account_password):
+        self.account_no = account_no
+        self.__account_password = account_password
+    def reset_password(self):
+        print(self.__account_password)
+
+
+
+Account1 = Account("12456", "abc123")
+print(Account1.account_no)
+# print(Account1.__account_password)
+print(Account1.reset_password())
+
+# another example
+class Person:
+    __name = "mehak"
+
+    def __hello(self):
+        print("hello person!")
+
+    def welcome(self):
+        self.__hello()    
+
+p1 = Person()
+# print(p1.__name)    
+# print(p1.__hello())
+print(p1.welcome())
+
+# INHERITENCE (example of single inheritence)
+class Car:
+    color = "black"
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class toyotacar(Car):
+    def __init__(self,name):
+        self.name = name
+
+car1 = toyotacar("fortuner")
+car2 = toyotacar("prius")
+
+print(car1.start(), car1.color)
+print(car2.name, car2.color)
+
+
+# example of multi level inheritence
+class Car:
+
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class toyotacar(Car):
+    def __init__(self,brand):
+        self.brand = brand
+
+
+class fortuner(toyotacar):
+    def __init__(self,type):
+        self.type = type
+
+car1 = fortuner("diesel")
+car1.start()
+
+# example of multiple inheritence
+
+class A:
+    variableA = "welcome to class A"
+
+class B:
+    variableB = "welcome to class B"
+
+class C(A, B):
+    variableC = "welcome to class C"
+
+c1 = C()
+print(c1.variableA)
+print(c1.variableB)
+print(c1.variableC)
