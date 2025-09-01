@@ -297,3 +297,98 @@ c1 = C()
 print(c1.variableA)
 print(c1.variableB)
 print(c1.variableC)
+
+# super method
+class Car:
+    def __init__(self, type):
+        self.type = type
+
+    @staticmethod
+    def start():
+        print("Car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class toyotacar(Car):
+    def __init__(self,name):
+        super().__init__(type)
+        self.name = name
+        super().start()
+car1 = toyotacar("prius","electric")
+print(car1.type)
+
+# class method
+class Person:
+    name = "ayesha"
+
+    # def changename(self, name):
+    #     Person.name = name 
+
+    @classmethod
+    def changeName(cls, name):
+        cls,name = name
+
+p1 = Person()
+# p1.changename("sadia")
+print(p1.name)
+print(Person.name)
+
+# property
+class Student:
+    def __init__(self, physics, chemistry, math):
+        self.physics = physics
+        self.chemistry = chemistry
+        self.math = math
+   
+    @property
+    def percentage(self):
+            return str((self.physics + self.chemistry + self.math)/3) + "%"
+
+
+Student1 = Student(89,76,99)
+print(Student1.percentage)  
+
+Student1.physics = 99
+# print(Student1.physics)
+# Student1.calculate_percentage
+print(Student1.percentage)
+
+
+# POLYMORPHISM : OPERATOR OVERLOADING
+class Complex:
+    def __init__(self,real,imaginary):
+        self.real = real
+        self.imaginary = imaginary                      
+
+
+    def show(self):
+        print(self.real, "i+", self.imaginary,"j") 
+
+    def __add__(self, number2):
+        newReal = self.real + number2.real
+        newimaginary = self.imaginary + number2.imaginary
+
+        return Complex(newReal, newimaginary)
+    
+
+    def __sub__(self, number2):
+        newReal = self.real - number2.real
+        newimaginary = self.imaginary - number2.imaginary
+        
+        return Complex(newReal, newimaginary)
+
+
+number1 = Complex(2, 8)
+number1.show()    
+
+number2 = Complex(9, 6)
+number2.show()  
+
+number3 = number1 + number2
+number3.show()
+
+number3 = number1 - number2
+number3.show()
+
