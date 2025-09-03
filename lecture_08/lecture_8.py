@@ -449,7 +449,7 @@ class Engineer(Employee):
 engineer1 = Engineer("Ahmed","36")
 engineer1.showDetails()
 
-# create a class called ORDER ehich stores item & its prices. use dunder function __gt__() to convey that:
+# create a class called ORDER which stores item & its prices. use dunder function __gt__() to convey that:
 # order1>order2 if price of order1 > price of order 2
 
 class Order:
